@@ -14,7 +14,7 @@ export const Button = ({
     buttonSize
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-    const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[1];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
     return ( 
         <Link to='/music' className='btn-mobile'>
@@ -36,7 +36,7 @@ export const Button2 = ({
     buttonSize
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-    const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[1];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
     return ( 
         <Link to='/photography' className='btn-mobile'>
@@ -58,7 +58,7 @@ export const Button3 = ({
     buttonSize
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-    const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[1];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
     return ( 
         <Link to='/programming' className='btn-mobile'>
@@ -80,7 +80,7 @@ export const Button4 = ({
     buttonSize
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-    const checkButtonSize = STYLES.includes(buttonSize) ? buttonSize : SIZES[1];
+    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
     return ( 
         <Link to='/engineering' className='btn-mobile'>

@@ -13,8 +13,15 @@
   }
   
   .navbar-container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* height: 80px; */
+    /* height: auto;
+    max-width: 1500px; */ 
+    display: flex;
+    flex-direction: column; /* Change to vertical flex direction */
+    justify-content: center;
     align-items: center;
     /* height: 80px; */
     height: auto;
@@ -22,8 +29,14 @@
   }
 
   .logo-container {
+    /* position: relative;
+    display: flex;
+    align-items: center; */
+    position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 5px; /* Add margin to create space between logo and buttons */
+    margin-top: 50px;
   }
   
   .navbar-logo {
@@ -32,7 +45,7 @@
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 5rem;
     display: flex;
     align-items: center;
   }
@@ -122,10 +135,11 @@
     }
   
     .navbar-logo {
-      /* position: absolute; */
+      /* position: relative; */
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+      /* z-index: 2; */
     }
   
     .menu-icon {

@@ -34,25 +34,24 @@ function Navbar() {
             Subhon Ghosh
           </Link>
         </div>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <div className="nav-buttons">
+          {button && (
+            <>
+              <div className="nav-button-container">
+                <Button buttonStyle="btn--outline">Music</Button>
+              </div>
+              <div className="nav-button-container">
+                <Button2 buttonStyle="btn--outline">Photography</Button2>
+              </div>
+              <div className="nav-button-container">
+                <Button3 buttonStyle="btn--outline">Programming</Button3>
+              </div>
+              <div className="nav-button-container">
+                <Button4 buttonStyle="btn--outline">Engineering</Button4>
+              </div>
+            </>
+          )}
         </div>
-        {button && (
-          <div className="nav-buttons">
-            <div className="nav-button-container">
-              <Button buttonStyle="btn--outline">Music</Button>
-            </div>
-            <div className="nav-button-container">
-              <Button2 buttonStyle="btn--outline">Photography</Button2>
-            </div>
-            <div className="nav-button-container">
-              <Button3 buttonStyle="btn--outline">Programming</Button3>
-            </div>
-            <div className="nav-button-container">
-              <Button4 buttonStyle="btn--outline">Engineering</Button4>
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );
